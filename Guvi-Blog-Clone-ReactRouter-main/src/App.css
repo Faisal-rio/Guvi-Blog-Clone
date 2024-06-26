@@ -1,0 +1,179 @@
+/* App.css */
+
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use a modern font stack */
+  background-color: #f0f2f5; /* Slightly lighter background color */
+  color: #343a40; /* Dark text color */
+  line-height: 1.6; /* Improved line height for readability */
+  margin: 0;
+  padding: 0;
+}
+
+/* Top navigation */
+.navbar {
+  background-color: #343a40; /* Dark background color */
+  color: #ffffff; /* White text color */
+  padding: 1rem 2rem; /* Padding for navbar */
+  box-shadow: 0 2px 4px rgba(218, 16, 16, 0.1); /* Subtle shadow */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Center items vertically */
+}
+
+.navbar-brand {
+  display: flex; /* Flex for better alignment */
+  align-items: center; /* Center items vertically */
+}
+
+.navbar-brand img {
+  height: 40px; /* Adjust height of logo */
+  margin-right: 0.5rem; /* Optional: Space between logo and text */
+}
+
+.navbar-nav {
+  display: flex; /* Flex for better alignment */
+  gap: 1rem; /* Space between navbar items */
+}
+
+.nav-item {
+  list-style-type: none; /* Remove bullet points from list items */
+}
+
+.nav-link {
+  text-decoration: none; /* Remove underline from links */
+  color: #ffffff; /* White text color */
+  padding: 0.75rem 1.5rem; /* Padding for navbar links */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.2s; /* Smooth transition */
+}
+
+.nav-link:hover {
+  background-color: #1468b0; /* Darker background on hover */
+}
+
+/* Main card container */
+.main-card {
+  background-color: #ffffff; /* White background for cards */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden; /* Hide overflow for consistency */
+  margin: 2rem 0; /* Margin for cards */
+}
+
+/* Card styles */
+.card {
+  border: none; /* Remove default card border */
+  transition: transform 0.2s ease; /* Smooth transition on hover */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift card slightly on hover */
+  box-shadow: 0 12px 24px rgba(218, 13, 13, 0.948); /* Enhanced shadow on hover */
+}
+
+.card-img-top {
+  width: 100%; /* Ensure image covers the entire width */
+  height: 200px; /* Set a fixed height for images */
+  object-fit: cover; /* Ensure image covers the entire space */
+  border-top-left-radius: 12px; /* Rounded corners for top left */
+  border-top-right-radius: 12px; /* Rounded corners for top right */
+}
+
+.card-body {
+  padding: 1.5rem; /* Increased padding inside the card body */
+}
+
+.card-title {
+  font-size: 1.5rem; /* Larger font size for title */
+  font-weight: bold; /* Bold font weight for title */
+  margin-bottom: 1rem; /* Space below title */
+}
+
+.card-text {
+  font-size: 1rem; /* Normal font size for description */
+  color: #6c757d; /* Darker text color for description */
+  line-height: 1.4; /* Improved line height for description */
+}
+
+.card-read {
+  font-size: 0.875rem; /* Smaller font size for "Read more" link */
+  color: #007bff; /* Blue color for link */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-decoration: none; /* Remove default underline */
+  transition: color 0.2s; /* Smooth color transition */
+}
+
+.card-read:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.card-footer {
+  background-color: #2f5b87; /* Light gray background for footer */
+  padding: 1rem; /* Padding inside footer */
+  border-bottom-left-radius: 12px; /* Rounded corners for bottom left */
+  border-bottom-right-radius: 12px; /* Rounded corners for bottom right */
+}
+
+.custom-card-footer {
+  font-size: 0.875rem; /* Smaller font size for footer text */
+  color: #ffffff; /* Darker text color for footer */
+}
+
+/* Navigation menu */
+#menu {
+  margin-top: 2rem; /* Space above the navigation menu */
+}
+
+.nav-item {
+  list-style-type: none; /* Remove bullet points from list items */
+  margin-right: 1rem; /* Right margin for menu items */
+}
+
+.link-style {
+  text-decoration: none; /* Remove underline from links */
+  color: #343a40; /* Dark text color for links */
+  transition: color 0.2s; /* Smooth color transition */
+}
+
+.link-style:hover {
+  color: #007bff; /* Blue color on hover */
+}
+
+/* Footer */
+footer {
+  text-align: center; /* Center-align footer text */
+  margin-top: 3rem; /* Increased space above the footer */
+  padding: 1rem 0; /* Padding inside footer */
+  background-color: #343a40; /* Dark background color */
+  color: #ffffff; /* White text color */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 767px) {
+  .navbar-nav {
+    flex-direction: column; /* Stack navbar items vertically */
+  }
+
+  .nav-link {
+    padding: 0.5rem 1rem; /* Adjust padding for mobile */
+  }
+
+  .main-card {
+    margin: 1rem 0; /* Adjust margin for mobile */
+  }
+
+  .card-body {
+    padding: 1rem; /* Adjust padding inside the card body */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-card {
+    margin: 1.5rem 0; /* Adjust margin for tablet */
+  }
+
+  .card-body {
+    padding: 1.25rem; /* Adjust padding inside the card body */
+  }
+}
